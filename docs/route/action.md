@@ -7,7 +7,7 @@ new: true
 
 Route actions are the "writes" to route [loader][loader] "reads". They provide a way for apps to perform data mutations with simple HTML and HTTP semantics while React Router abstracts away the complexity of asynchronous UI and revalidation. This gives you the simple mental model of HTML + HTTP (where the browser handles the asynchrony and revalidation) with the behavior and UX capabilities of modern SPAs.
 
-<docs-error>This feature only works if using a data router like [`createBrowserRouter`][createbrowserrouter]</docs-error>
+<docs-warning>This feature only works if using a data router, see [Picking a Router][pickingarouter]</docs-warning>
 
 ```tsx
 <Route
@@ -144,4 +144,4 @@ For more details and expanded use cases, read the [errorElement][errorelement] d
 [workingwithformdata]: ../guides/form-data
 [useactiondata]: ../hooks/use-action-data
 [returningresponses]: ./loader#returning-responses
-[createbrowserrouter]: ../routers/create-browser-router
+[pickingarouter]: ../routers/picking-a-router
